@@ -1,0 +1,25 @@
+&params
+resample_num    = 10000
+alpha           = 0.05
+fct_mon         = 6
+fct_day         = 21
+lead_days       = 10
+ave_days        = 31
+domain_west     = 0
+domain_east     = 180
+domain_south    = 0
+domain_north    = 85
+start_year      = 1999
+end_year        = 2010
+samp_interval   = 2
+samp_sgl_len    = 45
+anal_fct_num    = 10
+var_num         = 2
+var_names       = 'z200', 'z500'
+input_dir_curt  = '/data/cfs_reforecast_output'
+input_dir_hist  = '/data/cfs_reforecast_output'
+input_dir_prec  = '/home/lizhenkun/cfs/Monte_Carlo'
+output_dir      = '/home/lizhenkun/cfs/Monte_Carlo'
+path_separator  = '/'
+debug_level     = 100
+/
