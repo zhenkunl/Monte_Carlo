@@ -69,7 +69,7 @@
         iunit = 101
         do ivar = 1, var_num
 
-           filename = trim(input_dir)//path_separator//trim(var_names(ivar))//'/'//trim(var_names(ivar))//'-'//cyear//cmon//cday//'-cfs-forecast.dat'
+           filename = trim(input_dir)//path_separator//trim(var_names(ivar))//path_separator//trim(var_names(ivar))//'-'//cyear//cmon//cday//'-cfs-forecast.dat'
 
            inquire( file = filename, exist = lexist )
            if ( .not. lexist ) then
