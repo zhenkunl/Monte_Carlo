@@ -719,19 +719,19 @@
 !                 FIND EIGENVALUES ONLY BY METHOD 1.
                   CALL TRED1(NM,N,AA,W,FV1,FV2)
                   CALL IMTQL1(N,W,FV1,IERR)
-                ELSEIF(OPT == 2)THEN
+              ELSEIF(OPT == 2)THEN
 !                 FIND EIGENVALUES ONLY BY METHOD 2.
                   CALL TRED1(NM,N,AA,W,FV1,FV2)
                   CALL TQLRAT(N,W,FV2,IERR)
-                ELSEIF(OPT == 3)THEN
+              ELSEIF(OPT == 3)THEN
 !                 FIND BOTH EIGENVALUES AND EIGENVECTORS BY METHOD 1.
                   CALL TRED2(NM,N,AA,W,FV1,Z)
                   CALL TQL2(NM,N,W,FV1,Z,IERR)
-                ELSEIF(OPT == 4)THEN
+              ELSEIF(OPT == 4)THEN
 !                 FIND BOTH EIGENVALUES AND EIGENVECTORS BY METHOD 2.
                   CALL TRED2(NM,N,AA,W,FV1,Z)
                   CALL IMTQL2(NM,N,W,FV1,Z,IERR)
-                ELSE
+              ELSE
                   WRITE(6, *)'OPT IS NOT SUPPORT, SUBROUTINE RS INPUT PARA ERROR (OPT) IS FOUND'
                   STOP
               ENDIF
